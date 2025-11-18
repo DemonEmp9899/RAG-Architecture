@@ -1,0 +1,7 @@
+fitz  # PyMuPDF (pip alias is PyMuPDF; some environments use 'PyMuPDF')
+PyMuPDF
+regex
+pandas
+tqdm
+python-magic-bin; platform_system == "Windows"
+python-magic; platform_system != "Windows"

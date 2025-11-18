@@ -1,0 +1,97 @@
+# ===============================
+# 🧠 RAG Project .gitignore File
+# Covers: Python, LangChain, FAISS, Chroma, and LLM projects
+# ===============================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ---- Virtual Environments ----
+.env
+.venv
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# ---- Jupyter / Colab ----
+.ipynb_checkpoints/
+*.ipynb_save
+*.ipynb~*
+*.nbconvert.ipynb
+
+# ---- Data & Vector Stores ----
+# Vector databases / embedding caches
+chroma/
+chroma_db/
+faiss_index/
+faiss_store/
+milvus_data/
+weaviate_data/
+*.faiss
+*.pkl
+*.npy
+*.npz
+
+# ---- RAG Documents ----
+# If you store raw knowledge files or processed chunks locally
+data/
+datasets/
+docs/
+pdfs/
+uploads/
+*.pdf
+*.docx
+*.csv
+*.json
+*.yaml
+
+# ---- Logs & Caches ----
+logs/
+*.log
+cache/
+__cache__/
+*.tmp
+*.bak
+
+# ---- API Keys / Config ----
+# (Never push your OpenAI, HuggingFace, or Pinecone keys)
+.env.local
+config.json
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# ---- Checkpoints / Models ----
+checkpoints/
+models/
+*.bin
+*.h5
+*.pt
+*.ckpt
+
+# ---- VSCode / IDE ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Node (if using a frontend like React or Streamlit) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
