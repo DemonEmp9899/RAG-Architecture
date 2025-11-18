@@ -58,14 +58,14 @@ Supports: PDF, TXT, MD, DOCX
 python scripts/ingest.py
 
 🤖 STEP 5 — Run the RAG Server
-python scripts/serve.py
-
+python scripts/embe_store.py
+python scripts/retrieve.py
 
 Open Swagger UI:
 👉 http://localhost:8000/docs
 
 🔍 STEP 6 — Query the System
-python scripts/query.py --question "Explain CNN vs RNN"
+python scripts/generate_answer.py --question "Explain CNN vs RNN"
 
 🎉 You Now Have a Smart AI That Reads Your Documents!
 
@@ -78,3 +78,4 @@ Rudra Pratap Tomer
 ⭐ Love the project? Give it a star!
 
 ✨ “RAG turns your documents into intelligence. This repo turns RAG into reality.”
+
